@@ -1,0 +1,17 @@
+Order Items table creation
+==========================
+
+CREATE TABLE `order_items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` decimal(5,2) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+
+Order Items table insertion
+===========================
+
+INSERT INTO `order_items` (`id`, `order_id`, `quantity`, `price`) VALUES
+(1, 1, 1, 60.00);

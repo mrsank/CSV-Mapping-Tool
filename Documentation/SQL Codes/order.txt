@@ -1,0 +1,33 @@
+Order table creation
+====================
+
+CREATE TABLE `order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cust_ord_id` varchar(100) NOT NULL,
+  `ship_first_name` varchar(200) NOT NULL,
+  `ship_last_name` varchar(200) NOT NULL,
+  `ship_company` varchar(200) NOT NULL,
+  `ship_street1` varchar(200) NOT NULL,
+  `ship_street2` varchar(200) NOT NULL,
+  `ship_zip` varchar(10) NOT NULL,
+  `ship_city` varchar(100) NOT NULL,
+  `ship_state` varchar(100) NOT NULL,
+  `ship_country` varchar(100) NOT NULL,
+  `inv_first_name` varchar(200) NOT NULL,
+  `inv_last_name` varchar(200) NOT NULL,
+  `inv_company` varchar(200) NOT NULL,
+  `inv_street1` varchar(200) NOT NULL,
+  `inv_street2` varchar(200) NOT NULL,
+  `inv_zip` varchar(10) NOT NULL,
+  `inv_city` varchar(100) NOT NULL,
+  `inv_state` varchar(100) NOT NULL,
+  `inv_country` varchar(100) NOT NULL,
+  `grand_total` decimal(10,2) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+Order table insertion
+=====================
+
+INSERT INTO `order` (`id`, `cust_ord_id`, `ship_first_name`, `ship_last_name`, `ship_company`, `ship_street1`, `ship_street2`, `ship_zip`, `ship_city`, `ship_state`, `ship_country`, `inv_first_name`, `inv_last_name`, `inv_company`, `inv_street1`, `inv_street2`, `inv_zip`, `inv_city`, `inv_state`, `inv_country`, `grand_total`) VALUES
+(1, '34324514158-1', 'John', 'Smith', '3', 'Heibergsvej2', '', '8600', 'Silkeborg', 'Silkeborg', 'DK', '', '', '', 'Heibergsvej2', '', '8600', 'Silkeborg', '', '', 5.00);

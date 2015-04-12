@@ -1,0 +1,19 @@
+Customer Table creation
+========================
+
+CREATE TABLE `customer` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` int(10) NOT NULL,
+  `first_name` varchar(200) NOT NULL,
+  `last_name` varchar(200) NOT NULL,
+  `email` varchar(500) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+
+Customer Table insertion
+========================
+
+INSERT INTO `customer` (`id`, `order_id`, `first_name`, `last_name`, `email`, `phone`) VALUES
+(1, 1, 'John', 'Smith', 'name1@returbo.de', '29664566');
